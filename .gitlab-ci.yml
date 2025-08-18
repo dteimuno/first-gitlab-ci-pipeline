@@ -1,0 +1,19 @@
+workflow:
+  name: My Awesome App Pipeline
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+stages:
+  - test
+  - deploy
+
+unit_test_job:
+  stage: test
+  tags:
+    - saas-linux-small-amd64
+  before_script:
+    - echo "Setting up environment for unit tests"
+  script:
+    - echo "Running unit tests"
+    - echo npm test
+    - echo npm test
