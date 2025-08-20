@@ -1,4 +1,4 @@
-# first-gilab-ci-pipeline
+# first-gitlab-ci-pipeline
 # CI/CD Pipeline Description — *My Awesome App Pipeline*
 
 This GitLab CI/CD configuration defines a simple pipeline with **one job** that runs on the **`test`** stage and is triggered **only for commits to the `main` branch**.
